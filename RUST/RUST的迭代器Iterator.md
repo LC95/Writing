@@ -51,7 +51,7 @@ while let Some(i) = iter.next() { //for i in iter
 for循环既可以自动将实现了IntoIterator的值转换为Iter，这一操作会消耗所有权/引用，也可以循环Iterator。
 
 ```rust
-for e in & collection {} //this will consume the collection
+for e in collection {} //this will consume the collection
 for e in &mut collection {}
 for e in & collection {}
 ```
